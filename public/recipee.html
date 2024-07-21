@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meal Finder App</title>
+</head>
+<body>
+    <main>
+        <section class="m-5">
+            <div id="recipe-details" class="container   h-80 m-auto mt-12 flex items-center border-b-2 border-black">
+                <div class="img h-60 w-2/4">
+                    <img id="recipe-image" class="w-full h-full object-contain" src="../assets/img/food.png" alt="">
+                </div>
+                <div id="short-details" class="short-details flex flex-col ml-11 h-5/6  w-2/5">
+                    <div class="recipe-detailed-name h-fit text-center mt-4 max-w-3/4">
+                         <p id="recipe-name" class="font-semibold text-2xl">Recipe Name</p>
+                    </div>
+                    <div id="recipe-labels" class="labels h-full bg-slate-600 w-full flex flex-wrap items-center justify-center">
+                        <p id="cuisineType" class="label-items h-fit w-fit bg-[#509E2F] text-white text-center font-semibold">Cuisine Type</p>
+                        <p id="caloriesLabel" class="label-items h-fit w-fit bg-[#509E2F] text-white text-center font-semibold">calories Labels</p>
+                        <p id="dishType" class="label-items h-fit w-fit bg-[#509E2F] text-white text-center font-semibold">Dish Type</p>
+                        <p id="total-weight" class="label-items h-fit w-fit bg-[#509E2F] text-white text-center font-semibold">Health Labels</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ingredients container justify-between m-auto h-fit mb-12 mt-12 flex items-center border-b-2 border-black">
+                <div id="ingredients-box" class="ingredients-box h-full w-2/4 ">
+                    <h2 class="text-xl font-semibold mb-2">Ingridiants</h2>
+                    <ul id="ingredients-list">
+                        <li class="list-disc">Ingredient 1</li>
+                    </ul>
+                </div>
+                <div id="recipe-box" class="recipe-box h-full w-2/4  p-2">
+                    <h2 class="text-xl font-semibold mb-2">Health Labels</h2>
+                    <p id="recipe-text"></p>
+                    <div id="source-link" class="container m-auto mt-12">
+                        <p id="source-label" class=" font-semibold text-lg">Source:</p>
+                        <a id="full-recipe-link" href="#" class="text-blue-500 block underline">Full Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nutrients" class="container m-auto h-fit ">
+                <div id="total-daily" class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Total Daily Values</h2>
+                    <ul id="total-daily-list" class="flex flex-wrap gap-2 p-0"></ul>
+                </div>
+                <div id="total-nutrients" class=" p-4 mt-10 h-fit">
+                    <h2 class="text-xl font-semibold mb-2">Total Nutrients</h2>
+                    <ul id="total-nutrients-list"  class="flex flex-wrap gap-2 p-2"></ul>
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+    <footer class=" w-full fixed bottom-0 flex items-center justify-center" style="background-image: url(../assets/img/footerIMG.jpg); height: 80px; object-fit: contain;" >
+        <div>
+            <p class="text-white"> All rights Reserved &copy; Developed by shakeeb</p> 
+         </div>
+    </footer> 
+</body>
+<script src="../js/recipee.js"></script>
+</html>
+
+<!-- const url = `https://api.allorigins.win/get?url=${encodeURIComponent('https://api.edamam.com/search?q=' + query + '&app_id=' + MY_API_ID + '&app_key=' + MY_API_KEY + '&from=' + from + '&to=' + (from + to) + filterQuery)}`;
+// const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${MY_API_ID}&app_key=${MY_API_KEY}&from=${from}&to=${from + to}${filterQuery}`;
+// const url =  `curl "https://api.edamam.com/search?q=${query}&app_id=${MY_API_ID}&app_key=${MY_API_KEY}&from${from}&to=${from + to}&health=${filterQuery}"` -->
+
+
+
+<!-- const url = `https://api.edamam.com/search?q=${query}&app_id=${MY_API_ID}&app_key=${MY_API_KEY}&from=${from}&to=${from + to}${filterQuery}`; -->

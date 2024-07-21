@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icons" href="../assets/img/site-logo.png">
+</head>
+
+<body class="bg-gray-50">
+    <header>
+        <section class="main-front">
+            <div class=" search-container h-20  w-full flex items-center">
+                <div id="logo" class="logo mx-20 ">
+                    <img class="h-30 w-20 object-contain" src="../assets/img/site-logo.png" alt="">
+                </div>
+                <div class="search">
+                    <form action="" id="search-form" class="flex items-center ">
+
+                        <!-- <select id="fruit" class="rounded-l-xl h-8 border bg-grey px-1">
+                            <option value="apple">Apple</option>
+                            <option value="banana">Banana</option>
+                        </select> -->
+                        <input type="search" id="search-input" placeholder="Meal Category"
+                            class="flex-1 rounded-none h-8 border px-2 outline-none w-80">
+                        <button class="rounded-r-xl  h-8  bg-grey w-9 px-2" type="submit"><img
+                                src="../assets/icons/search.png" alt=""></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="front-page h-80 bg-test-color relative ">
+                <div class=" absolute insert-0 bg-cover w-full h-80 bg-center"
+                    style="background-image: url(../assets/img/background.png);">
+                    <div class="relative flex flex-col  h-full">
+                        <div class="mt-20 items-center text-center  w-60 text-white">
+                            <h1 class="text-4xl font-thin">Mera <span class=" font-bold"> Beef </span> </h1>
+                            <button
+                                class="mt-4 px-6 py-2 bg-transparent border hover:bg-yellow-700 transition-colors text-white ">More</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </header>
+    <main  class="flex h-fit  relative">
+        <section>
+            <div id="hamburger-menu-div" class=" ml-32  w-full ">
+                <button id="hamburger-menu" class=" hamburger-menu-margin text-white ">
+                    <img src="../assets/icons/menu.png" alt="Menu" class="h-6 w-6">
+                </button>
+            </div>
+            <section id="recipe-main-section" class="flex">
+                <section id="filter-options" class="filers h-fit w-1/4 ml-6">
+                
+                    <div class="w-fit m-auto">
+                        <div class="mb-8 mt-6">
+                            <h1 class=" filter-heading text-[#509E2F] text-4xl"> Filter Recipes </h1>
+                        </div>
+        
+                        <!-- <div class="filters-category mb-6">
+                            <h2 class=" category-heading font-medium text-[#509E2F] text-2xl">Diet</h2>
+                            <p >Dairy free</p>
+                            <p>Sugar free</p>
+                            <p>Egg Free</p>
+                            <p>Gulten Free</p>
+                        </div> -->
+        
+        
+                    </div>
+        
+                </section>
+                <section id="recipes-section" class="recipes h-fit w-full ml-6 mr-6">
+        
+                    <nav
+                        class="recipee-nevigation h-12 w-full items-center flex justify-center border-y border-black mt-8">
+                        <ul class="flex ">
+                            <li class="mx-8 text-[#509E2F] "><a class="font-semibold" href="index.html">Home</a></li>
+                            <li class="mx-8 text-[#509E2F] "><a class="font-semibold" href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+        
+                    <div class="recipes-list mb-10">
+                        <div class="recipes-list-heading text-[#509E2F] text-3xl my-4 ">
+                            <h1>Your Meals</h1>
+                        </div>
+                        <div id="loader-div" class="w-full text-center"><span id="loader" class="loader"></span></div>
+                        <div id="recipes-items-list" class="recipes-items-list mb-6 flex w-full  flex-wrap ">
+                            
+                            <!-- <div class="recipes-item m-10 shadow-xl h-fit  w-52 mt-2 mr-6">
+                                <img class="bg-cover object-contain" src="../assets/img/food.png" alt="">
+                                <div class="recipe-details">
+                                    <h3 class="recipe-name h-fit w-11/12 mb-2 mt-1">Thai Basil Tofu Stir Fry</h3>
+                                    <div class="nutriants flex mb-2 border-y">
+                                        <p class="text-xs py-2 px-1 "> <span class="text-[#509E2F]"> 8</span> INGREDIENTS </p>
+                                        <p class="text-xs py-2 px-1"><span class="text-[#509E2F]"> 342</span> CALORIES</p>
+                                    </div>
+                                    <div class="Couisine-Type flex items-center">
+                                        <img class="bg-cover object-contain mr-1 h-4 w-4 " src="../assets/icons/time-icon.png"
+                                            alt="">
+                                        <p>20 minutes</p>
+                                    </div>
+                                </div> - -->
+                        </div>
+                        <div class="pagination  w-full flex justify-center items-center gap-5">
+                            <button id="prev-btn" class="mt-4 mx-2 bg-blue-500 text-white rounded-md">
+                                Prev
+                            </button>
+                            <button id="next-btn" class="mt-4 mx-2 p-2 bg-blue-500 text-white rounded-md">
+                                Next
+                            </button>
+                        </div>
+                    
+                </section>
+                <section id="dacoration-section" class="dacoration h-fit w-1/4 ">
+                    <img src=" ../assets/img/Dacoration.png" alt="">
+                </section>
+            </section>
+            
+        </section>
+        
+    </main>
+    <footer class=" w-full fixed bottom-0 flex items-center justify-center" style="background-image: url(../assets/img/footerIMG.jpg); height: 80px; object-fit: contain;" >
+        <div>
+            <p class="text-white"> All rights Reserved &copy; Developed by shakeeb</p> 
+         </div>
+    </footer> 
+</body>
+<script src="../js/script.js"></script> 
+<script src="../js/recipee.js"></script>
+
+</html>
