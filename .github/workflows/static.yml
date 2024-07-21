@@ -43,18 +43,15 @@ jobs:
         run: npx tailwindcss -i ./src/input.css -o ./public/style.css
 
       - name: Copy Custom CSS
-        run: |
-          cp src/styles.css public/styles.css
+        run: cp src/styles.css public/styles.css
 
       - name: Copy JavaScript files
         run: |
           mkdir -p public/js
           cp -r js/* public/js/
 
-      - name: Copy HTML files
-        run: |
-          mkdir -p public
-          cp -r public/*.html public/
+      # HTML files are already in public/
+      # No need to copy HTML files from public/ to public/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
